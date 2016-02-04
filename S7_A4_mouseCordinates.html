@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html onmouseup="showCoords(event)">
+	<head>
+		<title>Session7_mouseCoordinates</title>
+		<script>
+		function showCoords(click) {
+		    var x = click.clientX;
+		    var y = click.clientY;
+		    document.getElementById("info").innerHTML += "X: " + x + ", Y: " + y + " " +  " " + "Date: " + new Date() + "<br>";
+		}
+		</script>
+	</head>
+
+
+	<body onmouseup="showCoords(event)">
+	<p>Click anywhere on the screen.</p>
+
+	<p id="info"></p>
+
+	</body>
+</html>
